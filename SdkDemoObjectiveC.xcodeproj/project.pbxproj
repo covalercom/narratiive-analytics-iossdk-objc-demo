@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75BBAA9ADF2E4651CD1D1C4F /* Pods_SdkDemoObjectiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22873539BF330B5D924CB05E /* Pods_SdkDemoObjectiveC.framework */; };
 		C4F0651124A6052300B7286D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F0651024A6052300B7286D /* AppDelegate.m */; };
 		C4F0651424A6052300B7286D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F0651324A6052300B7286D /* SceneDelegate.m */; };
 		C4F0651724A6052300B7286D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F0651624A6052300B7286D /* FirstViewController.m */; };
@@ -15,9 +16,13 @@
 		C4F0651F24A6052600B7286D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F0651E24A6052600B7286D /* Assets.xcassets */; };
 		C4F0652224A6052600B7286D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F0652024A6052600B7286D /* LaunchScreen.storyboard */; };
 		C4F0652524A6052600B7286D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F0652424A6052600B7286D /* main.m */; };
+		C4F0652C24A608F200B7286D /* NarratiiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F0652B24A608F200B7286D /* NarratiiveSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D993065907AB603D0C9E2E3 /* Pods-SdkDemoObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkDemoObjectiveC.release.xcconfig"; path = "Target Support Files/Pods-SdkDemoObjectiveC/Pods-SdkDemoObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
+		22873539BF330B5D924CB05E /* Pods_SdkDemoObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SdkDemoObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F38D05AC74979B723C6D46 /* Pods-SdkDemoObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdkDemoObjectiveC.debug.xcconfig"; path = "Target Support Files/Pods-SdkDemoObjectiveC/Pods-SdkDemoObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F0650C24A6052300B7286D /* SdkDemoObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdkDemoObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F0650F24A6052300B7286D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4F0651024A6052300B7286D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,6 +37,8 @@
 		C4F0652124A6052600B7286D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F0652324A6052600B7286D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4F0652424A6052600B7286D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4F0652B24A608F200B7286D /* NarratiiveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarratiiveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F0652F24A7589800B7286D /* SdkDemoObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SdkDemoObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F0652C24A608F200B7286D /* NarratiiveSDK.framework in Frameworks */,
+				75BBAA9ADF2E4651CD1D1C4F /* Pods_SdkDemoObjectiveC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,8 @@
 			children = (
 				C4F0650E24A6052300B7286D /* SdkDemoObjectiveC */,
 				C4F0650D24A6052300B7286D /* Products */,
+				FEB655CFC8F631109AD20B19 /* Pods */,
+				E4E45BD8A7514EA1CA536373 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +88,27 @@
 				C4F0652024A6052600B7286D /* LaunchScreen.storyboard */,
 				C4F0652324A6052600B7286D /* Info.plist */,
 				C4F0652424A6052600B7286D /* main.m */,
+				C4F0652F24A7589800B7286D /* SdkDemoObjectiveC-Bridging-Header.h */,
 			);
 			path = SdkDemoObjectiveC;
+			sourceTree = "<group>";
+		};
+		E4E45BD8A7514EA1CA536373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4F0652B24A608F200B7286D /* NarratiiveSDK.framework */,
+				22873539BF330B5D924CB05E /* Pods_SdkDemoObjectiveC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB655CFC8F631109AD20B19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44F38D05AC74979B723C6D46 /* Pods-SdkDemoObjectiveC.debug.xcconfig */,
+				1D993065907AB603D0C9E2E3 /* Pods-SdkDemoObjectiveC.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4F0652824A6052600B7286D /* Build configuration list for PBXNativeTarget "SdkDemoObjectiveC" */;
 			buildPhases = (
+				4B04A34230C74E12AC4241B1 /* [CP] Check Pods Manifest.lock */,
 				C4F0650824A6052300B7286D /* Sources */,
 				C4F0650924A6052300B7286D /* Frameworks */,
 				C4F0650A24A6052300B7286D /* Resources */,
+				FC6C5F06937566150E1914E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +144,7 @@
 				TargetAttributes = {
 					C4F0650B24A6052300B7286D = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -145,6 +178,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B04A34230C74E12AC4241B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SdkDemoObjectiveC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC6C5F06937566150E1914E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdkDemoObjectiveC/Pods-SdkDemoObjectiveC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdkDemoObjectiveC/Pods-SdkDemoObjectiveC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SdkDemoObjectiveC/Pods-SdkDemoObjectiveC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4F0650824A6052300B7286D /* Sources */ = {
@@ -293,8 +368,10 @@
 		};
 		C4F0652924A6052600B7286D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F38D05AC74979B723C6D46 /* Pods-SdkDemoObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3545B757M;
 				INFOPLIST_FILE = SdkDemoObjectiveC/Info.plist;
@@ -304,14 +381,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.narratiive.SdkDemoObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SdkDemoObjectiveC/SdkDemoObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C4F0652A24A6052600B7286D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D993065907AB603D0C9E2E3 /* Pods-SdkDemoObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V3545B757M;
 				INFOPLIST_FILE = SdkDemoObjectiveC/Info.plist;
@@ -321,6 +403,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.narratiive.SdkDemoObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SdkDemoObjectiveC/SdkDemoObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

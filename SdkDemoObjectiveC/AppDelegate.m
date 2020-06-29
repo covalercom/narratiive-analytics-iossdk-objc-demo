@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NarratiiveSDK-Swift.h" 
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    NarratiiveSDK *sdk = [NarratiiveSDK sharedInstance];
+     
+    // Optional: automatically report uncaught exceptions.
+    
+    sdk.debugMode = YES;
+    
+    [sdk setupWithHost:@"m-example.org" andHostKey:@"9SN/cN6oEv9QO2WCE7sb2D+BLmM="];
+
+ 
     return YES;
 }
 

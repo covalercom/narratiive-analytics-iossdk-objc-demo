@@ -7,6 +7,8 @@
 //
 
 #import "SecondViewController.h"
+#import "NarratiiveSDK-Swift.h"
+
 
 @interface SecondViewController ()
 
@@ -19,5 +21,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    NarratiiveSDK *sdk = [NarratiiveSDK sharedInstance];
+    [sdk sendWithScreenName:@"/second-page"];
+}
 
 @end

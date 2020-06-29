@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "NarratiiveSDK-Swift.h"
 
 @interface FirstViewController ()
 
@@ -19,5 +20,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    NarratiiveSDK *sdk = [NarratiiveSDK sharedInstance];
+    [sdk sendWithScreenName:@"/first-page"];
+}
 
 @end

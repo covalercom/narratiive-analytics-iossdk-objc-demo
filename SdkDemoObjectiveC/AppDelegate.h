@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NarratiiveSDK-Swift.h" 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -1,0 +1,16 @@
+PODS:
+  - NarratiiveSDK (0.1.0)
+
+DEPENDENCIES:
+  - NarratiiveSDK (~> 0.1.0)
+
+SPEC REPOS:
+  trunk:
+    - NarratiiveSDK
+
+SPEC CHECKSUMS:
+  NarratiiveSDK: c16b67145109cb6579b3eaf317de5512179e381b
+
+PODFILE CHECKSUM: 833b9ff0f756d11d0e5d9a69c01383313d119f8a
+
+COCOAPODS: 1.9.3
