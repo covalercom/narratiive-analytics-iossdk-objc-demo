@@ -61,6 +61,9 @@ To do so, import the NarratiiveSDK libruary and override the `didFinishLaunching
         // Optional, show debug information in output
         // Remove before app release.
         sdk.debugMode = YES;
+
+        // Optional, use of IDFA to identify user
+        sdk.userIDFA = YES;
      
         return YES;
     }
@@ -86,6 +89,14 @@ Here you’ll send a named screen view to NarratiiveSDK whenever the user opens 
 
 
 **Note**: The `screenName` is used to identify the screen view. It should follows a URL path format and be in lowercases.
+
+## About IDFA
+
+Announced at WDDC (Worldwide Developers Conference) 2020, iOS 14 will begin requiring users to opt in for developers to access their devices’ advertising ID, or IDFA. 
+
+In versions before NarratiiveSDK v0.2.0, the SDK collects the IDFA and use it for user identification by default.
+
+Since NarratiiveSDK  v0.2.0, the SDK requires the use of IDFA be explicitly enabled by setting `useIDFA = YES`. Please refer to the above example for details.
 
 
 ## Author

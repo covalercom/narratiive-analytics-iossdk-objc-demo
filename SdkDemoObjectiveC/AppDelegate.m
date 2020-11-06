@@ -21,9 +21,10 @@
    
     NarratiiveSDK *sdk = [NarratiiveSDK sharedInstance];
      
-    // Optional: automatically report uncaught exceptions.
-    
+    // Optional: automatically report uncaught exceptions.    
     sdk.debugMode = YES;
+    
+    sdk.useIDFA = YES;
     
     [sdk setupWithHost:@"m-example.org" andHostKey:@"9SN/cN6oEv9QO2WCE7sb2D+BLmM="];
 

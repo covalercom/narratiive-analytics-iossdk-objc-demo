@@ -7,5 +7,5 @@ target 'SdkDemoObjectiveC' do
 
   # Pods for SdkDemoObjectiveC
   # Pods for SdkDemoIosObjC
-  pod 'NarratiiveSDK', '~> 0.1.0'
+  pod 'NarratiiveSDK'
 end
